@@ -1,0 +1,25 @@
+
+
+Extract useful information about users behaviour from row dataset.
+
+
+General assumptions:
+1. Each row in the raw data file represents a brushing session.
+2. If brush sessions are less than 2 minutes assume that is one session.
+3. All session less than 20sec considered like random error. 
+4. When a user brushes multiple times in a morning or an evening, record the longest brush and discard
+the others.
+
+
+	User Information: 
+1. How many times the user brushed in the morning, and in the evening for each day of the week. 
+2. How many days in the week a user brushed twice a day. 
+3. The total number of valid morning and evening brush sessions in the week.
+4. The average time spent brushing per valid session in the week.
+
+
+	Group Dynamics:
+1. How many valid brush sessions were observed in total?
+2. What is the average number of brushing sessions per user in that group?
+3. What is the average brushing duration per user in that group?
+4. Which group performed the best? 
